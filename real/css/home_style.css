@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../img/background.svg);
+    background-color: black;
+    color: white;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    font-family: 'Mona12', sans-serif;
+}
+.logo {
+    margin : 20px;
+}
+.propil{
+    border-radius: 50%;
+    margin: 20px;
+    filter: brightness(0.8);
+}
+.propil:hover{
+    filter:brightness(0.5);
+}
+.propil_dropdown{
+    display: none;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 300px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 10%;
+    background: rgba(17, 16, 16, 0.5);
+    margin-top: 240px;
+    
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 1s ease-out;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+#map img{
+    border-radius: 10%;
+}
+#agent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#agent img{
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+#role{
+    display: flex;
+    
+}
+#role img{
+    width: 180px;
+    height: 180px;
+    margin-left:61px;
+    margin-top: 30px;
+}
+#gun{
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+}
+#gun img{
+    width: 250px;
+    height:120px;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+.inbox{
+    font-size: 40px;
+    width: 100%;
+    margin-top: auto; 
+    margin-bottom: 30px;               /*자동으로 아래로 밀린다.*/
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);         /* 아래에서 시작 */
+    }
+    to {
+        transform: translateY(0);            /* 원래 위치로 */
+    }
+}
+a {
+    text-decoration: none;  /* 밑줄 제거 */
+    color: inherit;         /* 글자색도 원래대로 */
+}
