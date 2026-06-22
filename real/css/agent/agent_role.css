@@ -1,0 +1,232 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 10;
+    }
+    body img {
+        -webkit-user-drag: none;
+    }
+
+    body {
+        font-family: 'Mona12', sans-serif;
+        background-image: url(../../img/img_agent/back.png);
+        color: white;
+        background-repeat: no-repeat;
+    }
+    .backgroundblur2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .rolelogo {
+        width: 300px;
+        height: 400px;
+        margin-right: 50px;
+        background-color: black;
+        border-radius: 30px;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 200px;
+        animation: slide 1s ease-out;
+    }
+    .rolelogo:hover {
+        transform: translateY(-20px);
+    }
+    .logoimg {
+        width: 200px;
+        margin-left: 50px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .text {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-left: 90px;
+        color: white;
+        text-decoration-line: none;
+    }
+    .agentheader img {
+        -webkit-user-drag: none; 
+    }
+
+    .chose {
+        height: 40px;
+        position: absolute;
+        left: 32%;
+        top: 50%;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(24, 0, 0);
+        border-radius: 8px;
+    }
+    .chose2 {
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        top: 18%;
+        line-height: 70px;
+    }
+    .backgroundblur {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        left: 0;
+        padding: 0px;
+    }
+    .agent-window {
+        width: max-content;
+        height: 80vh;
+        display: flex;
+        align-items: visible;
+        margin-top: 80px;
+    }
+    .button {
+        width: 150px;
+        position: absolute;
+    }
+    .agentheader {
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(4, 0, 53);
+        display: flex;
+        justify-content: center;
+    }
+    .rolebox {
+        width: 100px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    .rolelogoimg {
+        width: 40px;
+        padding: 25px;
+    }
+    .rolelogoimg:hover {
+        background-color: rgb(38, 1, 160); 
+    }
+    .ta {
+        background-color: rgb(24, 0, 101);
+    }
+    .en {
+        background-color: rgb(24, 0, 101);
+    }
+    .chuc {
+        background-color: rgb(24, 0, 101);
+    }
+    .gam {
+        background-color: rgb(24, 0, 101);
+    }
+    .img {
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        transform: scale(0.8);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .img.active {
+        transform: scale(1.15); 
+        opacity: 1;
+        z-index: 10;
+    }
+    .agentbox {
+        display: flex;
+        align-items: center;
+        width: 1200px; 
+        transition: transform 0.4s ease;
+        flex-wrap: wrap;
+    }
+    .agentbox img {
+        -webkit-user-drag: none;
+    }
+    .img.big-img {
+        width: 400px;
+        object-fit: contain;
+    }
+    @keyframes slide {
+        from {
+            transform: translateY(-30px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .backgroundblur {
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        top: 100px;
+        height: calc(100% - 100px);
+    }
+    .agent-window {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .agentbox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 1200px;
+        transition: transform 0.4s ease;
+        flex-wrap: wrap;
+    }
+    .agentbox > img {
+        width: calc(25% - 30px);
+        text-align: center;
+    }
+    .agentbox a {
+        display: block;
+        width: calc(25% - 30px);
+        text-align: center;
+    }
+    .img {
+        width: 220px;
+        height: 400px;
+        object-fit: contain;
+        cursor: pointer;
+        transform: scale(0.8);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+    .img.active, .img:hover {
+        transform: scale(1.08);
+        opacity: 1;
+        z-index: 10;
+    }
+    .img.big-img {
+        width: 100%;
+    }
+
+    body:has(.rolelogoimg.chuc) .agentbox a {
+        display: block;
+        width: auto;
+    }
+    body:has(.rolelogoimg.chuc) .img {
+        width: calc(25% - 30px);
+        min-width: 160px;
+    }
+    body:has(.rolelogoimg.chuc) .img.big-img {
+        width: calc(25% - 30px);
+    }

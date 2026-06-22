@@ -4,15 +4,23 @@
     padding: 0;
 }
 
-body{
-    color: white;
-    background: linear-gradient(to bottom, black,#570000);
+body {
+    width: 100%;
+    height: 100%;
     font-family: 'Mona12', sans-serif;
+    color: white;
+    background-image: url(../../img/img_map/back.png);
+    background-repeat: no-repeat;/*배경 이미지 반복 방지*/
+    background-size: cover;/*배경 이미지 전체 화면에 맞게 조정*/
+    background-attachment: fixed; /*배경 이미지 고정*/
+    backdrop-filter: brightness(0.3);
+    
 }
 
 html{
     width: 100%;
     height: 100%;
+    
 }
 
 .allbox{
@@ -53,16 +61,16 @@ html{
 }
 
 .img4{
-    background: linear-gradient(to bottom, black, #a3a3a3);
+    background: linear-gradient(to bottom, black, #a3a3a3); /*배경색상 조정*/
 }
 
 .rolelogo,.rolelogo1,.rolelogo2,.rolelogo3{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*로고를 중앙에 배치*/
     position: absolute;
     bottom: 50%;
     left:100px;
-    opacity: 0;
+    opacity: 0; 
     z-index:10;
     margin: 0;
     padding: 0;
@@ -72,7 +80,7 @@ html{
     font-size: 30px;
     margin-top: 35px;
     margin-left: 20px;
-    color: white !important;
+    color: white !important; 
 }
 
 .rolelogo img,.rolelogo1 img,.rolelogo2 img,.rolelogo3 img{
@@ -82,7 +90,7 @@ html{
 }
 
 .box1,.box2,.box3,.box4{
-    position: relative;
+    position: relative; /*각 박스에 상대적인 위치 설정*/
 }
 
 .box1:hover .rolelogo,.box2:hover .rolelogo1,.box3:hover .rolelogo2,.box4:hover .rolelogo3{
@@ -90,7 +98,7 @@ html{
 }
 
 .box1:hover .img1,.box2:hover .img2,.box3:hover .img3,.box4:hover .img4{
-    filter: brightness(0.5);
+    filter: brightness(0.5); /*이미지 밝기 조정*/
 }
 
 @keyframes slidedown{
@@ -98,7 +106,7 @@ html{
         transform: translateY(50px);
     }to{
         transform: translateY(0px);
-    }
+    } /*슬라이드 다운 애니메이션*/
 }
 
 .logo {

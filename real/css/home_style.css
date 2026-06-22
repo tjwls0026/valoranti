@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-image: url(../img/background.svg);
+    background-image: url(../img/img_home/background.svg);
     background-color: black;
     color: white;
     margin: 0;
@@ -63,7 +63,7 @@ body {
 }
 #agent{
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 가로 중앙 정렬 */
     align-items: center;
 }
 #agent img{
@@ -71,7 +71,6 @@ body {
     height: 180px;
     margin-top: 20px;
     margin-left: 20px;
-
 }
 #role{
     display: flex;
@@ -98,7 +97,7 @@ body {
     font-size: 40px;
     width: 100%;
     margin-top: auto; 
-    margin-bottom: 30px;               /*자동으로 아래로 밀린다.*/
+    margin-bottom: 30px;              
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -114,6 +113,6 @@ body {
     }
 }
 a {
-    text-decoration: none;  /* 밑줄 제거 */
-    color: inherit;         /* 글자색도 원래대로 */
-}
+    text-decoration: none;  /* 밑줄을 제거 */
+    color: inherit;         /* 글자색을 원래대로 바꿈 */
+} /* 링크의 색상을 상속받도록 설정 */
