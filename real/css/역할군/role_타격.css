@@ -76,7 +76,7 @@ body {
     background: linear-gradient(to bottom, black 40%, rgba(147, 147, 147, 0.2));
     animation: slide 1.5s;
     /* 슬라이드 애니메이션 추가 */
-}
+} 
 
 .sulbox header {
     box-sizing: border-box;
@@ -89,7 +89,7 @@ body {
 
 .sulbox2 {
     position: absolute;
-    right: 150px;
+    right: 149;
     bottom: 300px;
     width: 700px;
     height: 400px;
